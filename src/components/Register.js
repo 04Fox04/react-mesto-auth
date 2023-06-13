@@ -16,7 +16,6 @@ function Register({ onRegister, renderLoading }) {
     onRegister(email, password);
   }
 
-
   return (
     <div className="register">
       <h2 className="register__title">Регистрация</h2>

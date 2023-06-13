@@ -22,7 +22,7 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike
         <ul className="elements__list">
           {cards.map((card) => (
             <li key={card._id}>
-              <Card card={card} onCardClick={onCardClick} onCardLike={onCardLike} onCardDelete={onCardDelete} handleDeleteCardClick={handleDeleteCardClick}/>
+              <Card card={card} onCardClick={onCardClick} onCardLike={onCardLike} onCardDelete={onCardDelete} handleDeleteCardClick={handleDeleteCardClick} />
             </li>
           ))}
         </ul>

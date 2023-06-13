@@ -5,43 +5,33 @@ import { api } from "../utils/Api"
 import Header from "./Header"
 import Main from "./Main"
 import Footer from "./Footer"
-
 import ImagePopup from "./ImagePopup"
 import { CurrentUserContext } from "../contexts/CurrentUserContext"
 import EditProfilePopup from "./EditProfilePopup"
 import EditAvatarPopup from "./EditAvatarPopup"
 import AddPlacePopup from "./AddPlacePopup"
-
-
 import Login from "../components/Login"
 import Register from "../components/Register"
 import ProtectedRoute from "../components/ProtectedRoute"
 import * as Auth from "../utils/Auth"
 import InfoTooltip from "../components/InfoTooltip"
-
 import ConfirmDeleteCardPopup from "./ConfirmDeleteCardPopup.js"
 
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] = useState(false);
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = useState(false);
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] = useState(false);
-
   const [selectedCard, setSelectedCard] = useState(null);
   const [currentUser, setCurrentUser] = useState({});
   const [cards, setCards] = useState([]);
-  //=============================================
   const [loggedIn, setLoggedIn] = useState(false);
   const [userEmail, setUserEmail] = useState('');
   const [renderLoading, setRenderLoading] = useState(false);
   const [isDeleteCardPopup, setDeleteCardPopup] = useState(false);
   const [isInfotooltipPopupOpen, setInfotooltipPopupOpen] = useState(false);
   const [success, setSuccess] = useState(false);
-
   const navigate = useNavigate()
-  //============================================
 
-
-  //============================================
 
   const handleEditAvatarClick = () => {
     setIsEditAvatarPopupOpen(true)
@@ -59,7 +49,6 @@ function App() {
     setSelectedCard(card)
     setDeleteCardPopup(true)
   };
-
 
   useEffect(() => {
     api
@@ -154,13 +143,9 @@ function App() {
       })
   };
 
-
-
-
   function handleLoginTrueStatus() {
     setLoggedIn(true);
   }
-
 
   const handleRegister = (email, password) => {
     setRenderLoading(true)

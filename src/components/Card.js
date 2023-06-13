@@ -13,7 +13,7 @@ function Card({ card, onCardClick, onCardLike, handleDeleteCardClick }) {
   function handleLikeClick() {
     onCardLike(card)
   }
-  const handleDeleteClick = () => {
+  function handleDeleteClick() {
     handleDeleteCardClick()
   }
 
