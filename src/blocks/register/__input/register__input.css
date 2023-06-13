@@ -1,0 +1,22 @@
+.register__input {
+    padding: 0;
+    padding-bottom: 13px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #000;
+    color: #FFF;
+    border-bottom: 2px solid #CCC;
+}
+
+.register__input:-webkit-autofill {
+    transition: all 5000s ease-in-out 0s;
+}
+
+.register__input:last-of-type {
+    margin-bottom: 0;
+}
