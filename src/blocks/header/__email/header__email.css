@@ -1,0 +1,9 @@
+.header__email {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #FFF;
+}
